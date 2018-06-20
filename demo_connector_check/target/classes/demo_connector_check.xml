@@ -12,5 +12,6 @@ http://www.mulesoft.org/schema/mule/demo http://www.mulesoft.org/schema/mule/dem
     <flow name="demo_connector_checkFlow">
         <http:listener config-ref="HTTP_Listener_Configuration" path="/demo" allowedMethods="GET" doc:name="HTTP"/>
         <demo:greet config-ref="Demo__Configuration" friend="Prashant" doc:name="Demo"/>
+        <logger message="Yo Babes" level="INFO" doc:name="Logger"/>
     </flow>
 </mule>
